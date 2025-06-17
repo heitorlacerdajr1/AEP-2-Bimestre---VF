@@ -5,16 +5,16 @@ let markers=[]
 const locais=[
  {nome:"Paço Municipal",categoria:"eletronicos",lat:-23.4243,lng:-51.9395,endereco:"Av. XV de Novembro, 701",imagem:"https://i.ibb.co/wHvmRSj/35138085402-1fb5d76b06-h.jpghttps://i.imgur.com/eco1.jpg"},
  {nome:"Supermercados Cidade Canção",categoria:"eletronicos",lat:-23.426,lng:-51.930,endereco:"Av. Brasil, 7225",imagem:"https://i.ibb.co/TMv36Djt/Screenshot-1.png"},
- {nome:"SESI",categoria:"eletronicos",lat:-23.427,lng:-51.918,endereco:"Rua Antonio Carniel, 499",imagem:"https://i.ibb.co/7tGDW8YQ/Sesi.jpg"},
+ {nome:"SESI",categoria:"eletronicos",lat:-23.4252,lng:-51.9574,endereco:"Rua Antonio Carniel, 499",imagem:"https://i.ibb.co/7tGDW8YQ/Sesi.jpg"},
  {nome:"Tiro de Guerra de Maringá",categoria:"eletronicos",lat:-23.4081,lng:-51.9559,endereco:"Av. Mandacaru, 730",imagem:"https://i.ibb.co/mFGyQj9r/Tiro-de-guerra.webp"},
  {nome:"4º BPM",categoria:"eletronicos",lat:-23.424,lng:-51.907,endereco:"Rua Mitsuzo Taguchi, 99",imagem:"https://i.ibb.co/ns4qPdLN/4-batalhao.jpg"},
- {nome:"Câmara Municipal",categoria:"eletronicos",lat:-23.428,lng:-51.936,endereco:"Av. Papa João XXIII, 239",imagem:"hhttps://i.ibb.co/QvSfz0p5/Camara-municipal.webp"},
+ {nome:"Câmara Municipal",categoria:"eletronicos",lat:-23.4276,lng:-51.9379,endereco:"Av. Papa João XXIII, 239",imagem:"hhttps://i.ibb.co/QvSfz0p5/Camara-municipal.webp"},
  {nome:"Coopercanção",categoria:"eletronicos",lat:-23.437,lng:-51.930,endereco:"Rua P. Gertrude Heck Fritzen, 5769",imagem:"https://i.imgur.com/eco7.jpg"},
- {nome:"Faculdades Maringá",categoria:"eletronicos",lat:-23.435,lng:-51.937,endereco:"Av. Prudente de Morais, 815",imagem:"https://i.ibb.co/SX4PF1MS/Faculdade-maringa.jpg"},
- {nome:"UNIFAMMA",categoria:"eletronicos",lat:-23.450,lng:-51.930,endereco:"Av. Horacio Racanello Filho, 5000",imagem:"https://i.ibb.co/wNdHqRj3/unifama.jpg"},
+ {nome:"Faculdades Maringá",categoria:"eletronicos",lat:-23.4166,lng:-51.9409,endereco:"Av. Prudente de Morais, 815",imagem:"https://i.ibb.co/SX4PF1MS/Faculdade-maringa.jpg"},
+ {nome:"UNIFAMMA",categoria:"eletronicos",lat:-23.4155,lng:-51.9931,endereco:"Av. Horacio Racanello Filho, 5000",imagem:"https://i.ibb.co/wNdHqRj3/unifama.jpg"},
 
- {nome:"Paróquia Menino Jesus de Praga",categoria:"vidros",lat:-23.430,lng:-51.940,endereco:"Rua Monsenhor Kimura, 31",imagem:"https://i.ibb.co/9Mymmkf/paroquia-menino.jpg"},
- {nome:"Paróquia Cristo Ressuscitado",categoria:"vidros",lat:-23.431,lng:-51.925,endereco:"Av. Rio Branco, 1000",imagem:"https://i.ibb.co/qLQYWb01/missa-de-dedicacao-igreja-cristo-ressuscitado-sera-dia-18-de-dezembro-12-12-2019.jpg"},
+ {nome:"Paróquia Menino Jesus de Praga",categoria:"vidros",lat:-23.4379,lng:-51.9349,endereco:"Rua Monsenhor Kimura, 31",imagem:"https://i.ibb.co/9Mymmkf/paroquia-menino.jpg"},
+ {nome:"Paróquia Cristo Ressuscitado",categoria:"vidros",lat:-23.4282,lng:-51.9583,endereco:"Av. Rio Branco, 1000",imagem:"https://i.ibb.co/qLQYWb01/missa-de-dedicacao-igreja-cristo-ressuscitado-sera-dia-18-de-dezembro-12-12-2019.jpg"},
  {nome:"Coopervidros",categoria:"vidros",lat:-23.500,lng:-51.950,endereco:"Estrada São Luiz, 2119, Gleba Pinguim",imagem:"https://i.imgur.com/vidro3.jpg"},
 
  {nome:"CooperPalmeiras",categoria:"reciclaveis",lat:-23.410,lng:-51.950,endereco:"Rodovia PR 317, 200",imagem:"https://i.imgur.com/rec1.jpg"},
@@ -23,16 +23,18 @@ const locais=[
  {nome:"CooperAmbiental",categoria:"reciclaveis",lat:-23.440,lng:-51.940,endereco:"Rua Izaura Gambá Vitorino, 345",imagem:"https://i.imgur.com/rec4.jpg"},
  {nome:"CooperMaringa",categoria:"reciclaveis",lat:-23.450,lng:-51.950,endereco:"Rodovia PR 317, 200",imagem:"https://i.imgur.com/rec5.jpg"},
 
- {nome:"Secretaria de Meio Ambiente",categoria:"pilhas",lat:-23.425,lng:-51.920,endereco:"Av. Cerro Azul, 544",imagem:"https://i.ibb.co/Xrb2wByD/secretaria.jpg"},
- {nome:"Atacadão Maringá",categoria:"pilhas",lat:-23.415,lng:-51.915,endereco:"Rua Fernão Dias, 300",imagem:"https://i.ibb.co/MxxbSsCq/atacadao.jpg"}
+ {nome:"Secretaria de Meio Ambiente",categoria:"pilhas",lat:-23.4274,lng:-51.9079,endereco:"Av. Cerro Azul, 544",imagem:"https://i.ibb.co/Xrb2wByD/secretaria.jpg"},
+ {nome:"Atacadão Maringá",categoria:"pilhas",lat:-23.4187,lng:-51.9467,endereco:"Rua Fernão Dias, 300",imagem:"https://i.ibb.co/MxxbSsCq/atacadao.jpg"}
 ]
 
+//funcao de iniciar o mapa
 function initMap(){
 map=new google.maps.Map(document.getElementById("map"),{
 zoom:13,
 center:{lat:-23.4206,lng:-51.933}
 })
 
+//funcao de encontrar local da pessoa e perguntar o local
 if(navigator.geolocation){
 navigator.geolocation.getCurrentPosition(
 (pos)=>{
@@ -55,9 +57,10 @@ map.setCenter(userPosition)
 ()=>{console.warn("Geolocalização negada")}
 )
 }
-
+//Marcadores do mapa e filtragem de marcadores
 adicionarMarcadores("todos")
 }
+
 
 function adicionarMarcadores(categoria){
 markers.forEach(m=>m.setMap(null))
