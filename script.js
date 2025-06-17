@@ -3,11 +3,11 @@ let userPosition=null
 let markers=[]
 
 const locais=[
- {nome:"Paço Municipal",categoria:"eletronicos",lat:-23.4206,lng:-51.933,endereco:"Av. XV de Novembro, 701",imagem:"https://i.ibb.co/wHvmRSj/35138085402-1fb5d76b06-h.jpghttps://i.imgur.com/eco1.jpg"},
+ {nome:"Paço Municipal",categoria:"eletronicos",lat:-23.4243,lng:-51.9395,endereco:"Av. XV de Novembro, 701",imagem:"https://i.ibb.co/wHvmRSj/35138085402-1fb5d76b06-h.jpghttps://i.imgur.com/eco1.jpg"},
  {nome:"Supermercados Cidade Canção",categoria:"eletronicos",lat:-23.426,lng:-51.930,endereco:"Av. Brasil, 7225",imagem:"https://i.ibb.co/TMv36Djt/Screenshot-1.png"},
  {nome:"SESI",categoria:"eletronicos",lat:-23.427,lng:-51.918,endereco:"Rua Antonio Carniel, 499",imagem:"https://i.ibb.co/7tGDW8YQ/Sesi.jpg"},
- {nome:"Tiro de Guerra de Maringá",categoria:"eletronicos",lat:-23.398,lng:-51.934,endereco:"Av. Mandacaru, 730",imagem:"https://i.ibb.co/mFGyQj9r/Tiro-de-guerra.webp"},
- {nome:"4º BPM",categoria:"eletronicos",lat:-23.411,lng:-51.931,endereco:"Rua Mitsuzo Taguchi, 99",imagem:"https://i.ibb.co/ns4qPdLN/4-batalhao.jpg"},
+ {nome:"Tiro de Guerra de Maringá",categoria:"eletronicos",lat:-23.4081,lng:-51.9559,endereco:"Av. Mandacaru, 730",imagem:"https://i.ibb.co/mFGyQj9r/Tiro-de-guerra.webp"},
+ {nome:"4º BPM",categoria:"eletronicos",lat:-23.424,lng:-51.907,endereco:"Rua Mitsuzo Taguchi, 99",imagem:"https://i.ibb.co/ns4qPdLN/4-batalhao.jpg"},
  {nome:"Câmara Municipal",categoria:"eletronicos",lat:-23.428,lng:-51.936,endereco:"Av. Papa João XXIII, 239",imagem:"hhttps://i.ibb.co/QvSfz0p5/Camara-municipal.webp"},
  {nome:"Coopercanção",categoria:"eletronicos",lat:-23.437,lng:-51.930,endereco:"Rua P. Gertrude Heck Fritzen, 5769",imagem:"https://i.imgur.com/eco7.jpg"},
  {nome:"Faculdades Maringá",categoria:"eletronicos",lat:-23.435,lng:-51.937,endereco:"Av. Prudente de Morais, 815",imagem:"https://i.ibb.co/SX4PF1MS/Faculdade-maringa.jpg"},
